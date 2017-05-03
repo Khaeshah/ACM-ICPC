@@ -1,0 +1,11 @@
+BFS/DFS/Dijkstra: Listas de adyacencia (0: (1,3) (2,5));
+Kruskal (Arbol recubridor minimo): Lista de aristas (0,1,3), (0,2,5) (origen,fin,peso);
+Floyd-Warshall: Matriz de adyacencia nxn
+
+Pasos a seguir:
+1 - Identificar el tipo de problema
+2 - Escoger la representacion
+3 - Nombrar los nodos de 0 a N-1 (p.ej, un map<string> a ints.)
+4 - Leer la entrada y construir el grafos
+5 - Aplicar el algoritmo
+6 - Imprimir por pantalla
