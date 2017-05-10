@@ -1,0 +1,50 @@
+Sistema dinamico.
+
+Estado: s (de un espacio S)
+Regla de transicion S -> S
+
+Simulacion S1 -> S2 -> S3 -> S4
+
+1) Cuenta bancaria:
+s = saldo
+regla: s -> s(1+gamma)
+gamma = tasa interes
+
+2) Fibonacci:
+s = integer
+
+st = st-2 + st-1
+
+Ejemplo:
+Input:
+S1
+(s0 = s1 = 1) regla de transicion
+
+Output:
+
+st (t>1)
+
+A) Iterar (con o sin recursion)
+int s=1, t=1, u;;
+for(int i = 1; i <= k; i++) 
+	u = s+t;
+	s = t
+	t = u
+	
+
+B) Encontrar la formula directamente, p. ej s(1+gamma)^t  O(log t)
+
+
+expo(int b, int t) {
+	if (t == 0) return 1;
+	int n = expo(b,t/2);
+	if(t % 2 == 1) return n*n*b;
+	else return n*n; 
+	// t = 13 = 1101,  b^8 * b^4 * b^1
+}
+
+La alternativa es una solucion analítica (o formulado como exponente)
+-------------------------
+Fibonacci:
+st = st-2 + st-1
+st-1 = st-1??
