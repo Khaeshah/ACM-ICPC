@@ -1,0 +1,15 @@
+Matriz * vector = o(n2)
+Matriz * matriz = o(n3)
+
+M·M·v = A·v no significa que M·M = A ====> pero es muy poco probable que eso pase.
+
+Para reducir el riesgo, podemos poner 10 vectores v distintos
+
+Substrings: S = 40000, substrings de 20000 chars, total n*(n+1)/2 => o(n3)
+
+Codificar cada substring por cada entero (hashing)
+Como hay 26 caracteres, codificaremos sobre 26 cada caracter.
+Si tenemos 20000 characters, tendremos que aplicar un modulo M.
+
+C-(0*26^k) % M +5) % M
+Recomendado seleccionar M primo grande
